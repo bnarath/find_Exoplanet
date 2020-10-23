@@ -110,7 +110,7 @@ The confusion matrix comparison is as follows.
   <img  src="Images/svm_cn.png">
 </p>
 
-<p align="lright">
+<p align="right">
   <img  src="Images/xgb_cn.png">
 </p>
 
