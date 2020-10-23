@@ -89,7 +89,9 @@ RFE needs an estimator that can score the features based on the importance. Rand
 
 # Tune Model Parameters
 Data Processing and Model Pipeline architecture is done as below.
+
 ![pipeline.png](Images/pipeline.png)
+
 * Used `GridSearch` to tune model parameters.
   - Tuned `C`, `gamma` and `kernel type` for SVM
   - Tuned `eta`, `max_depth`, and `min_child_weight` for XGB
