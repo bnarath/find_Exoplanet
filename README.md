@@ -101,6 +101,19 @@ Data Processing and Model Pipeline architecture is done as below.
 
 # Model Comparison
 
+In terms of accuracy XGB performs better than SVM model
+![acc_compare.png](Images/acc_compare.png)
+
+The confusion matrix comparison is as follows.
+<p align="left">
+  <img width="460" height="300" src="Images/svm_cn.png">
+</p>
+
+<p align="lright">
+  <img width="460" height="300" src="Images/xgb_cn.png">
+</p>
+
+
 
 # Insights
 
