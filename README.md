@@ -88,11 +88,13 @@ RFE needs an estimator that can score the features based on the importance. Rand
 * Used **`pipeline`** of transformers and model for operational efficiency.
 
 # Tune Model Parameters
-* Use `GridSearch` to tune model parameters.
+Data Processing and Model Pipeline architecture is done as below.
+![pipeline.png](Images/pipeline.png)
+* Used `GridSearch` to tune model parameters.
   - Tuned `C`, `gamma` and `kernel type` for SVM
   - Tuned `eta`, `max_depth`, and `min_child_weight` for XGB
   
-* Performance improvement after fine tuning is negligible compare to the model with default parameters.
+* Performance improvement after fine tuning is marginal compare to the model with default parameters.
 
 # Model Comparison
 
