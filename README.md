@@ -72,15 +72,15 @@ RFE needs an estimator that can score the features based on the importance. Rand
 - 30 features looks like the right options as it is stable (less std deviation in accuracy of all models).
 - Also, the accuracy of model with only 30 features is similar to that of all features.
 - Selected features
-        ['dec', 'koi_depth', 'koi_depth_err1', 'koi_depth_err2', 'koi_duration',
-       'koi_duration_err1', 'koi_duration_err2', 'koi_fpflag_co',
-       'koi_fpflag_ec', 'koi_fpflag_nt', 'koi_fpflag_ss', 'koi_impact',
-       'koi_insol', 'koi_insol_err1', 'koi_insol_err2', 'koi_kepmag',
-       'koi_model_snr', 'koi_period', 'koi_period_err1', 'koi_period_err2',
-       'koi_prad', 'koi_prad_err1', 'koi_prad_err2', 'koi_steff_err1',
+        ['koi_depth', 'koi_depth_err2', 'koi_duration', 'koi_duration_err1',
+       'koi_duration_err2', 'koi_fpflag_co', 'koi_fpflag_ec', 'koi_fpflag_nt',
+       'koi_fpflag_ss', 'koi_impact', 'koi_impact_err1', 'koi_insol',
+       'koi_insol_err1', 'koi_insol_err2', 'koi_kepmag', 'koi_model_snr',
+       'koi_period', 'koi_period_err1', 'koi_period_err2', 'koi_prad',
+       'koi_prad_err1', 'koi_prad_err2', 'koi_srad_err1', 'koi_steff_err1',
        'koi_steff_err2', 'koi_teq', 'koi_time0bk', 'koi_time0bk_err1',
        'koi_time0bk_err2', 'ra']
-
+       
 # Preprocess the Data
 * Data set is split into train and test to guage the model performance.
 * Ensured train/test data doesn't contain missing values.
