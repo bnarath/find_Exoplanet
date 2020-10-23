@@ -97,6 +97,7 @@ Data Processing and Model Pipeline architecture is done as below.
   - Tuned `eta`, `max_depth`, and `min_child_weight` for XGB
   
 * Performance improvement after fine tuning is marginal compare to the model with default parameters.
+![pipeline.png](Images/finetune.png)
 
 # Model Comparison
 
