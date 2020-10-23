@@ -18,7 +18,7 @@ This project consists of an end-end machine learning pipeline:
 
 There are 40 features and 3 categories of exoplanet dispositions (in 'koi_disposition'). The categories are `CANDIDATE`, `CONFIRMED` and `FALSE POSITIVE`.
 
-1. koi_disposition : The category of this KOI from the Exoplanet Archive. Current values are CANDIDATE, FALSE POSITIVE, or CONFIRMED. (THIS is the target value)
+  - koi_disposition : The category of this KOI from the Exoplanet Archive. Current values are CANDIDATE, FALSE POSITIVE, or CONFIRMED. (THIS is the target value)
 
 As per the [exoplanet archive](https://exoplanetarchive.ipac.caltech.edu/docs/API_kepcandidate_columns.html#pdisposition), the features are described as follows:
 
