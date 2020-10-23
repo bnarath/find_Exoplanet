@@ -1,5 +1,9 @@
 #Custom
 machine_learning_grading_rubric.pdf
+Data_Exploration.ipynb
+model_1.ipynb
+Model3_DNN.ipynb
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
