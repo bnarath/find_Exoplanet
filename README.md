@@ -64,13 +64,16 @@ As per the [exoplanet archive](https://exoplanetarchive.ipac.caltech.edu/docs/AP
 1. dec: Dec (deg). KIC Declination (float)
 1. koi_kepmag: Kepler-band (mag). Kepler-band (mag) (float)
 
+# Feature selection using RFE
 
-### Preprocess the Data
+- 30 features looks like the right options as it is stable (less std deviation in accuracy of all models).
+- Also, the accuracy is similar to that of all features.
 
-* Preprocess the dataset prior to fitting the model.
-* Perform feature selection and remove unnecessary features.
-* Use `MinMaxScaler` to scale the numerical data.
-* Separate the data into training and testing data.
+# Preprocess the Data
+* Data set is split into train and test to guage the model performance.
+* Ensured train/test data doesn't contain missing values.
+* Use `MinMaxScaler` to scale the numerical data (used the same scale on test data)
+* Used **`pipeline`** of transformers and model for operational efficiency.
 
 ### Tune Model Parameters
 
