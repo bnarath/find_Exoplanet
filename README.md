@@ -112,7 +112,32 @@ The confusion matrix comparison is as follows.
 </p>
 <br>
 
+- - -
+
 # Insights
+
+Most important features are derived using XGB feature importance metric.
+
+![feature_importance.png](Images/feature_importance.png)
+
+A distribution of the top 6 features are ploted across all dispositions to understand how they differ in dispositions.
+
+![Comparison.png](Images/Comparison.png)
+
+Some evident conclusions are as follows:
+
+- koi_model_snr (Transit Signal-to-Noise ) very high is an indication of False Positives.
+
+- koi_duration (Transit Duration (hours)) higher than 6 hours is also an indication of False Positives.
+
+- koi_prad (Planetary Radius (Earth radii); The radius of the planet) higher than 25 is also an indication of False Positives.
+
+- ra (deg) KIC Right Ascension lower than 290 is an indiction of exoplanets
+
+**Usefulness of the models**
+If accuracy is the right metric, both models are good. However, considering the fact that missing the exoplanet is a very expensive operation, FN's of both CANDIDATE and CONFIRMED have to be as small as possible which is still a way to go for foth the models! 
+
+![class_report.png](Images/class_report.png)
 
 * Create a README that reports a comparison of each model's performance as well as a summary about your findings and any assumptions you can make based on your model (is your model good enough to predict new exoplanets? Why or why not? What would make your model be better at predicting new exoplanets?).
 
