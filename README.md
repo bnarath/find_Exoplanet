@@ -65,9 +65,21 @@ As per the [exoplanet archive](https://exoplanetarchive.ipac.caltech.edu/docs/AP
 1. koi_kepmag: Kepler-band (mag). Kepler-band (mag) (float)
 
 # Feature selection using RFE
+`RFE`  along with  `RepeatedStratifiedKFold` cross validation are used to identify the best number of features to be used in the model and which are they.
+RFE needs an estimator that can score the features based on the importance. Random Forest is used for that purpose. Also, to understand, the appropriate number of features to be used, SVM classifier is used to calculate accuracy in a cross validation setup. 
 
+![RFE.png](Images/RFE.png)
 - 30 features looks like the right options as it is stable (less std deviation in accuracy of all models).
-- Also, the accuracy is similar to that of all features.
+- Also, the accuracy of model with only 30 features is similar to that of all features.
+- Selected features
+        ['dec', 'koi_depth', 'koi_depth_err1', 'koi_depth_err2', 'koi_duration',
+       'koi_duration_err1', 'koi_duration_err2', 'koi_fpflag_co',
+       'koi_fpflag_ec', 'koi_fpflag_nt', 'koi_fpflag_ss', 'koi_impact',
+       'koi_insol', 'koi_insol_err1', 'koi_insol_err2', 'koi_kepmag',
+       'koi_model_snr', 'koi_period', 'koi_period_err1', 'koi_period_err2',
+       'koi_prad', 'koi_prad_err1', 'koi_prad_err2', 'koi_steff_err1',
+       'koi_steff_err2', 'koi_teq', 'koi_time0bk', 'koi_time0bk_err1',
+       'koi_time0bk_err2', 'ra']
 
 # Preprocess the Data
 * Data set is split into train and test to guage the model performance.
@@ -75,12 +87,17 @@ As per the [exoplanet archive](https://exoplanetarchive.ipac.caltech.edu/docs/AP
 * Use `MinMaxScaler` to scale the numerical data (used the same scale on test data)
 * Used **`pipeline`** of transformers and model for operational efficiency.
 
-### Tune Model Parameters
-
+# Tune Model Parameters
 * Use `GridSearch` to tune model parameters.
-* Tune and compare at least two different classifiers.
+  - Tuned `C`, `gamma` and `kernel type` for SVM
+  - Tuned `eta`, `max_depth`, and `min_child_weight` for XGB
+  
+* Performance improvement after fine tuning is negligible compare to the model with default parameters.
 
-### Reporting
+# Model Comparison
+
+
+# Insights
 
 * Create a README that reports a comparison of each model's performance as well as a summary about your findings and any assumptions you can make based on your model (is your model good enough to predict new exoplanets? Why or why not? What would make your model be better at predicting new exoplanets?).
 
