@@ -155,4 +155,8 @@ If accuracy is the right metric, both models are good. However, because missing 
 ## CodeBase
   - [XGB Model](Code/Model2_XGB.ipynb)
   - [SVM Model](Code/Model1_SVM.ipynb)
+  
+## Models
+  - [XGB](Code/Bincy_Narath_XGB.sav)
+  - [SVM](Code/Bincy_Narath_SVM.sav)
 - - -
