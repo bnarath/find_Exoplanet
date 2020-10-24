@@ -112,9 +112,7 @@ The confusion matrix comparison is as follows.
   <img align="right" height="300" width="450" src="Images/xgb_cn.png">
 </p>
 
-
-<br>
-<br>
+<p align="left" float="none"></p>
 - - -
 
 
