@@ -115,13 +115,18 @@ The confusion matrix comparison is as follows.
 
 - - -
 
+
+
 # Insights
+
 
 Most important features are derived using XGB feature importance metric.
 
 ![feature_importance.png](Images/feature_importance.png)
 
+
 A distribution of the top 6 features are ploted across all dispositions to understand how they differ in dispositions.
+
 
 ![Comparison.png](Images/Comparison.png)
 
