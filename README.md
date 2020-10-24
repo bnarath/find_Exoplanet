@@ -109,8 +109,9 @@ The confusion matrix comparison is as follows.
 <p>
   <img align="left" height="300" width="400" src="Images/svm_cn.png">
   <img align="right" height="300" width="400" src="Images/xgb_cn.png">
+  <p float="none"></p>
 </p>
-<br float="none">
+
 
 - - -
 
@@ -156,27 +157,3 @@ If accuracy is the right metric, both models are good. However, considering the 
   - [XGB Model](Code/Model2_XGB.ipynb)
   - [SVM Model](Code/Model1_SVM.ipynb)
 - - -
-
-## Hints and Considerations
-
-* Start by cleaning the data, removing unnecessary columns, and scaling the data.
-
-* Not all variables are significant be sure to remove any insignificant variables.
-
-* Make sure your `sklearn` package is up to date.
-
-* Try a simple model first, and then tune the model using `GridSearch`.
-
-- - -
-
-## Submission
-
-* Create a Jupyter Notebook for each model and host the notebooks on GitHub.
-
-* Create a file for your best model and push to GitHub
-
-* Include a README.md file that summarizes your assumptions and findings.
-
-* Submit the link to your GitHub project to Bootcamp Spot.
-
-##### © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
