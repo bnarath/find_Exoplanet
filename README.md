@@ -110,7 +110,7 @@ The confusion matrix comparison is as follows.
   <img align="left" height="300" width="400" src="Images/svm_cn.png">
   <img align="right" height="300" width="400" src="Images/xgb_cn.png">
 </p>
-<br>
+<br float="none">
 
 - - -
 
@@ -139,7 +139,11 @@ If accuracy is the right metric, both models are good. However, considering the 
 
 ![class_report.png](Images/class_report.png)
 
-* Create a README that reports a comparison of each model's performance as well as a summary about your findings and any assumptions you can make based on your model (is your model good enough to predict new exoplanets? Why or why not? What would make your model be better at predicting new exoplanets?).
+**Ways to improve**
+- Choose a different metric on model selection (say precision)
+- Downsample the larger classess to make equal weightage of classes for koi_disposition
+- Synthetic upsampling of smaller classes for equal class representations
+- Elaborate grid search
 
 - - -
 
@@ -147,12 +151,10 @@ If accuracy is the right metric, both models are good. However, considering the 
 
 * [Exoplanet Data Source](https://www.kaggle.com/nasa/kepler-exoplanet-search-results)
 
-* [Scikit-Learn Tutorial Part 1](https://www.youtube.com/watch?v=4PXAztQtoTg)
-
-* [Scikit-Learn Tutorial Part 2](https://www.youtube.com/watch?v=gK43gtGh49o&t=5858s)
-
-* [Grid Search](https://scikit-learn.org/stable/modules/grid_search.html)
-
+## [Data](Data/exoplanet_data.csv)
+## CodeBase
+  - [XGB Model](Code/Model2_XGB.ipynb)
+  - [SVM Model](Code/Model1_SVM.ipynb)
 - - -
 
 ## Hints and Considerations
