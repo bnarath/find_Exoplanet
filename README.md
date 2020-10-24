@@ -109,16 +109,12 @@ The confusion matrix comparison is as follows.
 
 <p>
   <img align="left" height="300" width="450" src="Images/svm_cn.png">
-  <img align="right" height="300" width="450" src="Images/xgb_cn.png">
+  <img align="left" height="300" width="450" src="Images/xgb_cn.png">
 </p>
 
-<p align="left" float="none"></p>
 - - -
 
-
-
 # Insights
-
 
 Most important features are derived using XGB feature importance metric.
 
