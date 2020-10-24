@@ -107,10 +107,8 @@ In terms of accuracy XGB performs better than SVM model
 
 The confusion matrix comparison is as follows.
 
-<p>
-  <img align="left" height="300" width="450" src="Images/svm_cn.png">
-  <img align="left" height="300" width="450" src="Images/xgb_cn.png">
-</p>
+![svm_cn.png](Images/svm_cn.png)
+![xgb_cn.png](Images/xgb_cn.png)
 
 - - -
 
